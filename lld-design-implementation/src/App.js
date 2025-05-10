@@ -8,6 +8,7 @@ import CommentsContainer from './Components/Comments/CommentContainer'
 import LanguageProvider from './contexts/LanguageProvider';
 import AccordianContainer from './Components/Accordian/AccordianContainer';
 import Slider from './Components/ImageSlider/Slider';
+import PaginationContainer from './Components/Pagination/PaginationContainer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Header/>
         <Routes>
+          <Route path="/pagination" element={<PaginationContainer/>}/>
           <Route path="/image-slider" element={<Slider/>}/>
           <Route path="/nested-comments" element={<CommentsContainer/>}/>
           <Route path="/accordian" element={<AccordianContainer/>}/>

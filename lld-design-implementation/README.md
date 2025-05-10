@@ -37,4 +37,15 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
 - Nested Comments
   - In this usecase, you will have a data set in which each of the comment can have replies and each of the replies can have more replies to it. This can be nexted to n level
   - Create comments container and iterate over the comments to show the comments
-  
+
+- Image Slider/Carousel
+ - Create a mock file with few image srcs
+ - Create a slider which has left and right button to navigate from one photo to another
+ - Add egde case conditions to loop the photo in case we reach to the end of it
+ - Add transition to ease out the change with translate property to look smooth while sliding the images
+
+- Pagination
+ - Use dummy json to fetch user details
+ - Create a pagination container which will have option to go next, prev or to a specific page
+ - It also has an option to have a page limit selection
+ - Create a table component to render the number of results in form of a table
