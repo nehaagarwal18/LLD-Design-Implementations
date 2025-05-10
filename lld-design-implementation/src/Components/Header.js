@@ -1,5 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import LanuguageSelection from './MultiLanguage/LanguageSelection'
+
 
 const Header = () => {
   return (
@@ -7,8 +9,10 @@ const Header = () => {
         <div>
             <h1>LLD</h1>
         </div>
-        <ul>
+        <ul className="flex gap-4">
             <Link to="/shimmer-ui"><li>Shimmer UI</li></Link>
+            <Link to="/about"><li>About</li></Link>
+            <LanuguageSelection />
         </ul>
     </div>
   )
