@@ -49,3 +49,7 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
  - Create a pagination container which will have option to go next, prev or to a specific page
  - It also has an option to have a page limit selection
  - Create a table component to render the number of results in form of a table
+
+- Live Chat
+  - Create a video container component which will have a video and chat window
+  - 
