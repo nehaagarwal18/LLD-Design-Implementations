@@ -10,6 +10,7 @@ const Header = () => {
             <h1>LLD</h1>
         </div>
         <ul className="flex gap-4">
+            <Link to="/nested-comments"><li>Nested Comments</li></Link>
             <Link to="/accordian"><li>Accordian</li></Link>
             <Link to="/recipes"><li>Recipes</li></Link>
             <Link to="/recipes"><li>Recipes</li></Link>
