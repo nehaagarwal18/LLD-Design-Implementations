@@ -10,6 +10,7 @@ const Header = () => {
             <h1>LLD</h1>
         </div>
         <ul className="flex gap-4">
+            <Link to="/recipes"><li>Recipes</li></Link>
             <Link to="/shimmer-ui"><li>Shimmer UI</li></Link>
             <Link to="/about"><li>About</li></Link>
             <LanuguageSelection />
