@@ -10,6 +10,7 @@ import AccordianContainer from './Components/Accordian/AccordianContainer';
 import Slider from './Components/ImageSlider/Slider';
 import PaginationContainer from './Components/Pagination/PaginationContainer';
 import VideoContainer from './Components/LiveChat/VideoContainer';
+import SearchContainer from './Components/AutocompleteSearch/SearchContainer'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <div className="App">
         <Header/>
         <Routes>
+          <Route path="/autocomplete-search" element={<SearchContainer/>}/>
+          <Route path="/live" element={<VideoContainer/>}/>
           <Route path="/live-chat" element={<VideoContainer/>}/>
           <Route path="/pagination" element={<PaginationContainer/>}/>
           <Route path="/image-slider" element={<Slider/>}/>
