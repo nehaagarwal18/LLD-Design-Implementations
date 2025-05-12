@@ -4,13 +4,21 @@ const SearchContainer = () => {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
   const [isResultVisible, setIsResultVisible] = useState(false)
+  const [cache, setCache] = useState({})
 
   const fetchResults = () => {
     if(query === '') return
+    if(cache[query]) {
+        setResults(cache[query])
+        return
+    }
     const SEARCH_URL = `https://www.google.com/complete/search?q=${query}&client=firefox`
     fetch(SEARCH_URL)
     .then(res => res.json())
-    .then(data => setResults(data[1]))
+    .then(data => {
+        setCache({...cache, [query]: data[1]})
+        setResults(data[1])
+    })
   }
 
   useEffect(() => {

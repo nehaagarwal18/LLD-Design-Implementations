@@ -52,4 +52,12 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
 
 - Live Chat
   - Create a video container component which will have a video and chat window
-  - 
+  - Create mock data for live chat
+  - use this live data and add the live comments to a DOM
+  - Use the virtualization concept and restrict the number of comments at once as 100 to not burden the DOM tree
+
+- AutoCOmplete Search
+  - Use goodle complete search API to fetch the result
+  - On input changes make the API Call
+  - Use concept of debounce to set timeout of 200 ms to reduce number of API Calls
+  - Cache the results in the state so we dont need to make the call again for same input
