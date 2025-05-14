@@ -22,6 +22,7 @@ const SearchContainer = () => {
   }
 
   useEffect(() => {
+    // debounce in js
     const timeout = setTimeout(() => {
         fetchResults()
     }, 200)

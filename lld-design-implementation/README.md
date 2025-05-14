@@ -56,8 +56,37 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
   - use this live data and add the live comments to a DOM
   - Use the virtualization concept and restrict the number of comments at once as 100 to not burden the DOM tree
 
-- AutoCOmplete Search
+- AutoComplete Search
   - Use goodle complete search API to fetch the result
   - On input changes make the API Call
   - Use concept of debounce to set timeout of 200 ms to reduce number of API Calls
   - Cache the results in the state so we dont need to make the call again for same input
+
+- Todo List
+  - Input box to add the item on enter
+  - Store the value in local storage 
+  - Edit and Delete button provided which will delete the item or allow to edit
+  - This again has to be synced to the local storage
+  - Clear items will empty the entire todo list along with the updation to local storage
+
+- Kanban Board
+  - take mock data for kanban board and constants definition of state
+  - use the HTML onDragStart and onDragDrop events to change the tasks
+  - use onDragOver and set as e.preventDefault to allow drag and drop
+  - Add draggable property to the task card to make it draggable 
+
+- Countdown
+ - Date selector to get the end date of the counter
+ - Countdown logic to calculate days, hours, minutes, seconds
+ - Incase the timelieft is less than zero show a message countdown has finished
+
+ - Prime Number calculator 
+  - While countdown is happening calculate all the prime numbers before a particular number
+  - Use webworker to calculate prime number as it is a heavey operation
+  - The countdown timer shoud not be impacted by this calculation
+
+- Weather
+ - Used one weather API to get the information based on latitude and longitude
+ - By default Bangalore is the city from which we get the lat and long
+ - In case someone wants to search for other city they can do so by using search bar
+ - App shows current temp, type of weather, max and min temp, wind speed, humitidy and feels like temp

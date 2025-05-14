@@ -15,7 +15,8 @@ import WeatherContainer from './Components/WeatherApp/WeatherContainer';
 import Countdown from './Components/Countdown/Countdown';
 import TodoContainer from './Components/Todo/TodoContainer';
 import KanbanContainer from './Components/Kanban/KanbanContainer';
-import WyswigContainer from './Components/wyswig/wyswigContainer';
+import WysiwygContainer from './Components/Wysiwyg/WysiwygContainer';
+import MainContainer from './Components/MainContainer';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       <div className="App">
         <Header/>
         <Routes>
-          <Route path="/wyswig" element={<WyswigContainer/>}/>
+          <Route path="/" element={<MainContainer/>}/>
+          <Route path="/wysiwyg" element={<WysiwygContainer/>}/>
           <Route path="/kanban" element={<KanbanContainer/>}/>
           <Route path="/todo" element={<TodoContainer/>}/>
           <Route path="/countdown" element={<Countdown/>}/>
