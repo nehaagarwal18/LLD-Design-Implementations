@@ -11,6 +11,11 @@ import Slider from './Components/ImageSlider/Slider';
 import PaginationContainer from './Components/Pagination/PaginationContainer';
 import VideoContainer from './Components/LiveChat/VideoContainer';
 import SearchContainer from './Components/AutocompleteSearch/SearchContainer'
+import WeatherContainer from './Components/WeatherApp/WeatherContainer';
+import Countdown from './Components/Countdown/Countdown';
+import TodoContainer from './Components/Todo/TodoContainer';
+import KanbanContainer from './Components/Kanban/KanbanContainer';
+import WyswigContainer from './Components/wyswig/wyswigContainer';
 
 function App() {
   return (
@@ -18,6 +23,11 @@ function App() {
       <div className="App">
         <Header/>
         <Routes>
+          <Route path="/wyswig" element={<WyswigContainer/>}/>
+          <Route path="/kanban" element={<KanbanContainer/>}/>
+          <Route path="/todo" element={<TodoContainer/>}/>
+          <Route path="/countdown" element={<Countdown/>}/>
+          <Route path="/weather" element={<WeatherContainer/>}/>
           <Route path="/autocomplete-search" element={<SearchContainer/>}/>
           <Route path="/live" element={<VideoContainer/>}/>
           <Route path="/live-chat" element={<VideoContainer/>}/>

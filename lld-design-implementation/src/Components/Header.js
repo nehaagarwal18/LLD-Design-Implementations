@@ -10,6 +10,11 @@ const Header = () => {
             <h1>LLD</h1>
         </div>
         <ul className="flex gap-4">
+            <Link to="wysiwyg"><li>WYSIWYG</li></Link>
+            <Link to="weather"><li>Weather</li></Link>
+            <Link to="countdown"><li>Countdown</li></Link>
+            <Link to="kanban"><li>Kanban</li></Link>
+            <Link to="todo"><li>Todo</li></Link>
             <Link to="autocomplete-search"><li>Autocomplete</li></Link>
             <Link to="/live-chat"><li>Live Chat</li></Link>
             <Link to="/pagination"><li>Pagination</li></Link>
