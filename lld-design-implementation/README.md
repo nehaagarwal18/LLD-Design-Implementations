@@ -39,16 +39,16 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
   - Create comments container and iterate over the comments to show the comments
 
 - Image Slider/Carousel
- - Create a mock file with few image srcs
- - Create a slider which has left and right button to navigate from one photo to another
- - Add egde case conditions to loop the photo in case we reach to the end of it
- - Add transition to ease out the change with translate property to look smooth while sliding the images
+  - Create a mock file with few image srcs
+  - Create a slider which has left and right button to navigate from one photo to another
+  - Add egde case conditions to loop the photo in case we reach to the end of it
+  - Add transition to ease out the change with translate property to look smooth while sliding the images
 
 - Pagination
- - Use dummy json to fetch user details
- - Create a pagination container which will have option to go next, prev or to a specific page
- - It also has an option to have a page limit selection
- - Create a table component to render the number of results in form of a table
+  - Use dummy json to fetch user details
+  - Create a pagination container which will have option to go next, prev or to a specific page
+  - It also has an option to have a page limit selection
+  - Create a table component to render the number of results in form of a table
 
 - Live Chat
   - Create a video container component which will have a video and chat window
@@ -76,17 +76,60 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
   - Add draggable property to the task card to make it draggable 
 
 - Countdown
- - Date selector to get the end date of the counter
- - Countdown logic to calculate days, hours, minutes, seconds
- - Incase the timelieft is less than zero show a message countdown has finished
-
- - Prime Number calculator 
-  - While countdown is happening calculate all the prime numbers before a particular number
-  - Use webworker to calculate prime number as it is a heavey operation
-  - The countdown timer shoud not be impacted by this calculation
+  - Date selector to get the end date of the counter
+  - Countdown logic to calculate days, hours, minutes, seconds
+  - Incase the timelieft is less than zero show a message countdown has finished
+  - Prime Number calculator 
+    - While countdown is happening calculate all the prime numbers before a particular number
+    - Use webworker to calculate prime number as it is a heavey operation
+    - The countdown timer shoud not be impacted by this calculation
 
 - Weather
- - Used one weather API to get the information based on latitude and longitude
- - By default Bangalore is the city from which we get the lat and long
- - In case someone wants to search for other city they can do so by using search bar
- - App shows current temp, type of weather, max and min temp, wind speed, humitidy and feels like temp
+  - Used one weather API to get the information based on latitude and longitude
+  - By default Bangalore is the city from which we get the lat and long
+  - In case someone wants to search for other city they can do so by using search bar
+  - App shows current temp, type of weather, max and min temp, wind speed, humitidy and feels like temp
+
+- Wysiwyg Editor
+  - Add support for content editable div
+  - For every selection on click of bold, italic and underline change the content accordingly
+  - Bullet and numbered lists.
+  - Undo/redo functionality.
+  - Convert to HTML or Markdown.
+
+- N box tic tac toe
+
+- Form Builder
+  - Drag fields from the left.
+  - Render form preview on the right.
+  - Save the form as JSON.
+
+- Build an Image Editor UI (skeleton)
+  - Upload image.
+  - Crop or apply basic filters.
+  - Save/export edited image.
+
+- Build a Code Playground
+  - HTML/CSS/JS editor panes.
+  - Render output in real time (iframe).
+  - Save/load previous sessions.
+
+- Photo Gallery
+  - Grid layout.
+  - Lazy loading and prefetching.
+  - Modal preview with zoom.
+  - Light/Dark theme toggle.
+
+- Notification System
+  - Support for toasts/snackbars.
+  - Auto-dismissal and manual close.
+  - Priority handling (info, warning, error).
+  - Real-time updates via WebSocket or polling.
+
+- Design a File Explorer (like Windows Explorer / macOS Finder)
+  - Folder-tree structure.
+  - Support for expanding/collapsing.
+  - Breadcrumb navigation.
+
+
+
