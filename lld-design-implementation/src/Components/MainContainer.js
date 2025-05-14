@@ -9,6 +9,9 @@ const MainContainer = () => {
         <div className="w-[70%]">
         <h1 className="text-2xl font-bold text-center">Projects</h1>
         <ul className="flex gap-4 flex-wrap mt-8">
+            <Link to="/color-picker"><li className={linkClass}>Color Picker</li></Link>    
+            <Link to="/chips"><li className={linkClass}>Chips</li></Link>
+            <Link to="/video-player"><li className={linkClass}>Video Player</li></Link>
             <Link to="/form-builder"><li className={linkClass}>Form Builder</li></Link>
             <Link to="/file-explorer"><li className={linkClass}>File Explorer</li></Link>
             <Link to="/code-playground"><li className={linkClass}>Code Playground</li></Link>
@@ -29,7 +32,7 @@ const MainContainer = () => {
             <Link to="/accordian"><li className={linkClass}>Accordian</li></Link>
             <Link to="/recipes"><li className={linkClass}>Recipes</li></Link>
             <Link to="/shimmer-ui"><li className={linkClass}>Shimmer UI</li></Link>
-            <Link to="/about"><li className={linkClass}>About</li></Link>
+            <Link to="/multi-language"><li className={linkClass}>Multi Language</li></Link>
         </ul>
         </div>
     </div>

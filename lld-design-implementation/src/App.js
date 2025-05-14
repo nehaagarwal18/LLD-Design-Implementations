@@ -17,6 +17,7 @@ import TodoContainer from './Components/Todo/TodoContainer';
 import KanbanContainer from './Components/Kanban/KanbanContainer';
 import WysiwygContainer from './Components/Wysiwyg/WysiwygContainer';
 import MainContainer from './Components/MainContainer';
+import StonePaperScissorContainer from './Components/StonePaperScissor/StonePaperScissorContainer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<MainContainer/>}/>
+          <Route path="/stone-paper-scissor" element={<StonePaperScissorContainer/>}/>
           <Route path="/wysiwyg" element={<WysiwygContainer/>}/>
           <Route path="/kanban" element={<KanbanContainer/>}/>
           <Route path="/todo" element={<TodoContainer/>}/>
@@ -39,7 +41,7 @@ function App() {
           <Route path="/accordian" element={<AccordianContainer/>}/>
           <Route path="/recipes" element={<RecipeContainer/>}/>
           <Route path="/shimmer-ui" element={<ProductContainer/>}/>
-          <Route path="/about" element={<About/>}/>
+          <Route path="/multi-language" element={<About/>}/>
         </Routes>
       </div>
     </LanguageProvider>

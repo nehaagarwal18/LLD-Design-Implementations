@@ -131,5 +131,16 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
   - Support for expanding/collapsing.
   - Breadcrumb navigation.
 
+- Implement a video player UI that can:
+  - Play, pause, seek
+  - Show progress bar
+  - Display buffering status
+  - Integrate with Media Source Extensions (MSE) to load and buffer video in chunks (simulate streaming).
+  - Simulate fetching video segments from a mock API or locally.
+  - Handle video events and update UI accordingly (e.g., buffering, stalled, ended).
+  - Bonus: Add support for adaptive bitrate simulation (load different qualities based on network speed).
+
+
+
 
 
