@@ -31,7 +31,7 @@ const Preview = ({html, css, js}) => {
   return (
     <div className="flex-1/2 p-4 border-1 border-r-0">
         <h2><b>Preview</b></h2>
-        <iframe title="preview" ref={iframeRef}/>
+        <iframe sandbox="allow-scripts" title="preview" ref={iframeRef}/>
     </div>
   )
 }
