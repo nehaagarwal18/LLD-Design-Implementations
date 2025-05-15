@@ -19,6 +19,7 @@ import WysiwygContainer from './Components/Wysiwyg/WysiwygContainer';
 import MainContainer from './Components/MainContainer';
 import StonePaperScissorContainer from './Components/StonePaperScissor/StonePaperScissorContainer';
 import CodeContainer from './Components/CodePlayground/CodeContainer';
+import ColorPickerContainer from './Components/ColorPicker/ColorPickerContainer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<MainContainer/>}/>
+          <Route path="/color-picker" element={<ColorPickerContainer/>}/>
           <Route path="/code-playground" element={<CodeContainer/>}/>
           <Route path="/stone-paper-scissor" element={<StonePaperScissorContainer/>}/>
           <Route path="/wysiwyg" element={<WysiwygContainer/>}/>

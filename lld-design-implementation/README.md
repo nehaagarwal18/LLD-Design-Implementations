@@ -140,6 +140,13 @@ This repository constitutes popular LLD Design Implemetations, majorly asked in 
   - Handle video events and update UI accordingly (e.g., buffering, stalled, ended).
   - Bonus: Add support for adaptive bitrate simulation (load different qualities based on network speed).
 
+- Color Picker
+  - Use canvas to define the rect in 2d plane and add gradient to it using addColorStop
+  - On color select add handler to get the pixel from the canvas context using getImageData
+  - Calculate rgb using pixel rgb(pixel[0], pixel[1], pixel[2])
+  - Set the color in state to show to the user
+
+
 
 
 
