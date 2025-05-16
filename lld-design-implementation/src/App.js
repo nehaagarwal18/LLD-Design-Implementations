@@ -20,6 +20,7 @@ import MainContainer from './Components/MainContainer';
 import StonePaperScissorContainer from './Components/StonePaperScissor/StonePaperScissorContainer';
 import CodeContainer from './Components/CodePlayground/CodeContainer';
 import ColorPickerContainer from './Components/ColorPicker/ColorPickerContainer';
+import TicTacToeContainer from './Components/TicTacToe/TicTacToeContainer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/code-playground" element={<CodeContainer/>}/>
           <Route path="/stone-paper-scissor" element={<StonePaperScissorContainer/>}/>
           <Route path="/wysiwyg" element={<WysiwygContainer/>}/>
+          <Route path="/tic-tac-toe" element={<TicTacToeContainer/>}/>
           <Route path="/kanban" element={<KanbanContainer/>}/>
           <Route path="/todo" element={<TodoContainer/>}/>
           <Route path="/countdown" element={<Countdown/>}/>
