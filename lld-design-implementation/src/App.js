@@ -21,6 +21,7 @@ import StonePaperScissorContainer from './Components/StonePaperScissor/StonePape
 import CodeContainer from './Components/CodePlayground/CodeContainer';
 import ColorPickerContainer from './Components/ColorPicker/ColorPickerContainer';
 import TicTacToeContainer from './Components/TicTacToe/TicTacToeContainer';
+import GalleryGrid from './PhotoGallery/GalleryGrid';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<MainContainer/>}/>
+          <Route path="/photo-gallery" element={<GalleryGrid/>}/>
           <Route path="/color-picker" element={<ColorPickerContainer/>}/>
           <Route path="/code-playground" element={<CodeContainer/>}/>
           <Route path="/stone-paper-scissor" element={<StonePaperScissorContainer/>}/>
